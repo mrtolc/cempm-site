@@ -1,338 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Cem Print and Marketing LLC</title>
-<meta name="description" content="Privacy policy for Cem Print and Marketing LLC and its mobile applications, including FolioTrax.">
-<link rel="icon" type="image/png" href="cem-logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #fafaf7;
-    --ink: #0e1726;
-    --ink-soft: #4a5468;
-    --line: #e3e1d8;
-    --accent: #d6552b;
-    --card: #ffffff;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
-  .container-wide { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FolioTrax Privacy Policy | Cem Print and Marketing LLC</title>
+  <meta name="description" content="Privacy Policy for FolioTrax — the personal portfolio tracking app by Cem Print and Marketing LLC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #080D1A; --bg2: #0D1526; --bg3: #111D33;
+      --cyan: #00C8D4; --teal: #1DE9B6;
+      --white: #F0F6FF; --muted: #7A8FAF; --border: rgba(0,200,212,0.15);
+    }
+    body {
+      background: var(--bg); color: var(--white);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px; line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
 
-  /* Header */
-  header {
-    background: rgba(250, 250, 247, 0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav {
-    display: flex; align-items: center; justify-content: space-between;
-    height: 72px;
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    color: var(--ink);
-  }
-  .logo img {
-    height: 44px;
-    width: auto;
-    display: block;
-  }
-  .logo-text {
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-  }
-  .nav-back {
-    color: var(--ink-soft);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .nav-back:hover { color: var(--ink); }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 40px; height: 64px;
+      background: rgba(8,13,26,0.92);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { font-size: 15px; font-weight: 700; color: var(--white); text-decoration: none; }
+    .nav-logo span { color: var(--cyan); }
+    .nav-back {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 14px; color: var(--muted); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-back:hover { color: var(--cyan); }
 
-  /* Document */
-  .doc {
-    padding: 72px 0 96px;
-  }
-  .eyebrow {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--accent);
-    margin-bottom: 20px;
-  }
-  .eyebrow::before {
-    content: "—";
-    margin-right: 10px;
-  }
-  h1 {
-    font-weight: 700;
-    font-size: clamp(34px, 4.5vw, 48px);
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-    margin-bottom: 16px;
-  }
-  .updated {
-    font-size: 14px;
-    color: var(--ink-soft);
-    margin-bottom: 48px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid var(--line);
-  }
-  h2 {
-    font-weight: 700;
-    font-size: 22px;
-    letter-spacing: -0.01em;
-    margin: 48px 0 16px;
-    color: var(--ink);
-  }
-  h3 {
-    font-weight: 600;
-    font-size: 17px;
-    margin: 28px 0 10px;
-    color: var(--ink);
-  }
-  p {
-    font-size: 16px;
-    color: var(--ink-soft);
-    margin-bottom: 16px;
-  }
-  ul {
-    margin: 0 0 20px 22px;
-  }
-  ul li {
-    font-size: 16px;
-    color: var(--ink-soft);
-    margin-bottom: 8px;
-    padding-left: 4px;
-  }
-  ul li::marker {
-    color: var(--accent);
-  }
-  strong {
-    color: var(--ink);
-    font-weight: 600;
-  }
-  a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s;
-  }
-  a:hover { border-color: var(--accent); }
-  .lead {
-    font-size: 18px;
-    color: var(--ink);
-    line-height: 1.6;
-    margin-bottom: 32px;
-  }
-  .contact-block {
-    background: var(--card);
-    border: 1px solid var(--line);
-    padding: 28px;
-    margin-top: 24px;
-  }
-  .contact-block p {
-    margin-bottom: 8px;
-  }
+    .lang-toggle {
+      display: flex; gap: 2px; background: var(--bg3);
+      border: 1px solid var(--border); border-radius: 8px; padding: 3px;
+    }
+    .lang-btn {
+      padding: 4px 12px; border: none; background: transparent;
+      color: var(--muted); font-size: 13px; font-weight: 600;
+      border-radius: 6px; cursor: pointer; transition: all .2s; font-family: inherit;
+    }
+    .lang-btn.active { background: var(--cyan); color: #080D1A; }
 
-  /* Footer */
-  footer {
-    padding: 48px 0 36px;
-    background: var(--ink);
-    color: rgba(255,255,255,0.7);
-  }
-  .footer-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 32px;
-    margin-bottom: 32px;
-  }
-  .footer-brand {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 12px;
-  }
-  .footer-brand img {
-    height: 40px;
-    width: auto;
-    background: white;
-    border-radius: 6px;
-    padding: 4px;
-  }
-  .footer-brand-text {
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-  }
-  .footer-addr { font-size: 14px; max-width: 280px; }
-  .footer-links {
-    display: flex;
-    gap: 28px;
-    font-size: 14px;
-  }
-  .footer-links a {
-    color: rgba(255,255,255,0.7);
-    border: none;
-  }
-  .footer-links a:hover { color: white; border: none; }
-  .footer-bottom {
-    padding-top: 28px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    font-size: 13px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
+    .page-header {
+      padding: 80px 40px 60px;
+      max-width: 800px; margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-eyebrow {
+      font-size: 12px; font-weight: 700; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--cyan); margin-bottom: 16px;
+    }
+    .page-title {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800; letter-spacing: -1.5px; line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .page-meta { font-size: 14px; color: var(--muted); }
 
-  @media (max-width: 700px) {
-    .logo-text { display: none; }
-    .doc { padding: 48px 0 64px; }
-  }
-</style>
+    .content {
+      max-width: 800px; margin: 0 auto;
+      padding: 60px 40px 100px;
+    }
+
+    .intro-box {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--cyan);
+      border-radius: 12px; padding: 24px 28px;
+      margin-bottom: 48px;
+      font-size: 15px; color: var(--muted); line-height: 1.7;
+    }
+    .intro-box strong { color: var(--white); }
+
+    h2 {
+      font-size: 20px; font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--white);
+      margin-top: 48px; margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-child { margin-top: 0; }
+
+    p { color: var(--muted); margin-bottom: 16px; font-size: 15px; }
+    p strong { color: var(--white); }
+
+    ul {
+      list-style: none; margin: 0 0 20px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    ul li {
+      color: var(--muted); font-size: 15px;
+      display: flex; gap: 10px; align-items: flex-start;
+    }
+    ul li::before {
+      content: '•'; color: var(--cyan);
+      font-size: 18px; line-height: 1.3; flex-shrink: 0;
+    }
+
+    .highlight-box {
+      background: rgba(0,200,212,0.05);
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p { margin: 0; }
+
+    .contact-box {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 16px; padding: 32px;
+      margin-top: 48px; text-align: center;
+    }
+    .contact-box h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+    .contact-box p { margin-bottom: 16px; }
+    .contact-link {
+      display: inline-block;
+      color: var(--cyan); font-weight: 600;
+      text-decoration: none; font-size: 15px;
+    }
+    .contact-link:hover { color: var(--teal); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 40px; text-align: center;
+      font-size: 13px; color: var(--muted);
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--cyan); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .page-header { padding: 60px 20px 40px; }
+      .content { padding: 40px 20px 80px; }
+      footer { padding: 24px 20px; }
+    }
+
+    .lang-en [data-tr] { display: none; }
+    .lang-tr [data-en] { display: none; }
+  </style>
 </head>
-<body>
+<body class="lang-en">
 
-<header>
-  <div class="container-wide nav">
-    <a href="/" class="logo">
-      <img src="cem-logo.png" alt="CEM logo">
-      <span class="logo-text">Cem Print &amp; Marketing</span>
+<nav>
+  <a class="nav-logo" href="/"><span>Cem</span> Print and Marketing</a>
+  <div style="display:flex;align-items:center;gap:20px;">
+    <a class="nav-back" href="/">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      <span data-en>Back to Home</span>
+      <span data-tr>Ana Sayfaya Dön</span>
     </a>
-    <a href="/" class="nav-back">← Back to home</a>
-  </div>
-</header>
-
-<section class="doc">
-  <div class="container">
-    <span class="eyebrow">Legal</span>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Effective date: June 25, 2026 · Last updated: June 25, 2026</p>
-
-    <p class="lead">This Privacy Policy explains how Cem Print and Marketing LLC ("we," "us," "our") collects, uses, and protects information when you use our website, services, and mobile applications, including <strong>FolioTrax</strong>. By using our services, you agree to the practices described below.</p>
-
-    <h2>1. Who we are</h2>
-    <p>Cem Print and Marketing LLC is a Florida-based company that provides printing, marketing, and digital product services, including mobile applications published on the Apple App Store. Our registered address is 8300 W Flagler St, Suite 155, Miami, FL 33144, United States.</p>
-
-    <h2>2. Information we collect</h2>
-
-    <h3>Information you provide directly</h3>
-    <p>When you contact us, request a quote, or use one of our digital products, you may provide information such as your name, email address, phone number, and any project details you choose to share.</p>
-
-    <h3>FolioTrax mobile application</h3>
-    <p>FolioTrax is a portfolio tracking application. The data you enter into FolioTrax — including financial accounts, holdings, transactions, and personal notes — is <strong>stored locally on your device</strong> and, if enabled, in your private iCloud account managed by Apple. We do not have access to this data.</p>
-    <p>FolioTrax does not require account creation, does not collect personally identifiable information about you, and does not transmit your portfolio data to our servers.</p>
-
-    <h3>Market data requests</h3>
-    <p>To display current prices, FolioTrax requests publicly available market data through third-party providers. These requests contain only the symbols you track (for example, "AAPL"), not your identity or holdings. No personal data is shared with these providers.</p>
-
-    <h3>Subscriptions and purchases</h3>
-    <p>If you purchase a subscription, payment is processed entirely by Apple through the App Store. We do not receive your payment method, billing address, or full transaction details. We only receive aggregated, anonymized purchase information that Apple makes available to developers.</p>
-
-    <h3>Automatically collected information</h3>
-    <p>Our website may collect standard server log information, including IP address, browser type, pages visited, and referring URL. This information is used for security, troubleshooting, and basic site analytics. We do not use this information to identify individual visitors.</p>
-
-    <h2>3. How we use information</h2>
-    <p>We use the information we collect to:</p>
-    <ul>
-      <li>Respond to your inquiries and provide the services you request.</li>
-      <li>Operate, maintain, and improve our website and mobile applications.</li>
-      <li>Comply with legal obligations and protect against fraud or misuse.</li>
-      <li>Communicate with you about your project, order, or subscription, where applicable.</li>
-    </ul>
-    <p>We do not sell or rent your personal information to third parties.</p>
-
-    <h2>4. Data sharing</h2>
-    <p>We do not share your personal information with third parties except in the following limited circumstances:</p>
-    <ul>
-      <li><strong>Service providers</strong> that help us operate our business (for example, hosting providers and email services), who are contractually bound to protect your information.</li>
-      <li><strong>Market data providers</strong> — when you use FolioTrax, the app sends ticker symbols (not your identity) to third-party financial data providers to retrieve publicly available quote information. No personal data is shared with these providers.</li>
-      <li><strong>Apple, Inc.</strong> — for subscription and payment processing through the App Store. Apple's privacy practices are described at <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</li>
-      <li><strong>Legal requirements</strong> — if required by law, court order, or governmental authority.</li>
-    </ul>
-
-    <h2>5. Data storage and security</h2>
-    <p>For FolioTrax, your portfolio data lives on your device and, optionally, in your own iCloud account. We do not store this data on our servers and cannot access it. Apple's iCloud security is governed by Apple's own privacy and security practices.</p>
-    <p>For website inquiries, any information you send to us by email is stored in our business email system and used only to respond to you and maintain a record of the conversation.</p>
-    <p>We use reasonable technical and organizational measures to protect information we hold, but no method of transmission or storage is completely secure.</p>
-
-    <h2>6. Your choices</h2>
-    <ul>
-      <li>You can delete the FolioTrax app from your device at any time, which removes the data stored locally on that device.</li>
-      <li>You can manage or delete your iCloud data through your iPhone settings.</li>
-      <li>You can manage your subscription, including cancellation, through your Apple ID account settings on your device.</li>
-      <li>You can contact us to request that we delete email correspondence we hold about you.</li>
-    </ul>
-
-    <h2>7. Children's privacy</h2>
-    <p>Our services are not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will take steps to delete it.</p>
-
-    <h2>8. International users</h2>
-    <p>Our services are operated from the United States. If you access our services from outside the United States, your information may be transferred to, stored, and processed in the United States, where data protection laws may differ from those of your country.</p>
-
-    <h2>9. Disclaimer regarding financial information</h2>
-    <p>FolioTrax is a personal portfolio tracking tool. Market data displayed in the app is provided for informational purposes only and does not constitute financial, investment, tax, or legal advice. We do not guarantee the accuracy or timeliness of third-party data. You should consult a qualified professional before making any financial decisions.</p>
-
-    <h2>10. Changes to this policy</h2>
-    <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. Material changes will be communicated within our applications or on this website where appropriate.</p>
-
-    <h2>11. Contact us</h2>
-    <p>If you have questions about this Privacy Policy or how your information is handled, you can reach us at:</p>
-    <div class="contact-block">
-      <p><strong>Cem Print and Marketing LLC</strong></p>
-      <p>8300 W Flagler St, Suite 155</p>
-      <p>Miami, FL 33144, United States</p>
-      <p>Email: <a href="mailto:info@cempm.com">info@cempm.com</a></p>
-      <p>Phone: <a href="tel:+13052235981">(305) 223-5981</a></p>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('tr')">TR</button>
     </div>
   </div>
-</section>
+</nav>
+
+<!-- ENGLISH CONTENT -->
+<div data-en>
+  <div class="page-header">
+    <p class="page-eyebrow">Legal</p>
+    <h1 class="page-title">FolioTrax Privacy Policy</h1>
+    <p class="page-meta">Cem Print and Marketing LLC &nbsp;·&nbsp; Last updated: June 2026</p>
+  </div>
+
+  <div class="content">
+    <div class="intro-box">
+      <strong>FolioTrax</strong> is a personal portfolio tracking application for iOS, developed and published by <strong>Cem Print and Marketing LLC</strong>. This Privacy Policy explains how we handle your information when you use FolioTrax. FolioTrax offers a <strong>7-day free trial</strong> with full Pro access, followed by a free plan (manual price entry) or a <strong>Pro subscription</strong> ($3.99/month or $29.99/year) with automatic price updates and premium features.
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>FolioTrax is designed with a <strong>local-first approach</strong>. The vast majority of your data never leaves your device.</p>
+    <p>Information stored locally on your device:</p>
+    <ul>
+      <li>Portfolio data you enter: transactions, asset names, quantities, prices, cash balances</li>
+      <li>Account information: broker accounts, bank accounts, savings, loans, subscription trackers</li>
+      <li>App settings: language preference, currency, theme, notification settings</li>
+      <li>Journal entries and notes you create within the app</li>
+      <li>Price alert configurations and watchlist items</li>
+    </ul>
+    <p>We do <strong>not</strong> collect or transmit this data to our servers. Your financial data remains on your device.</p>
+
+    <h2>2. Subscription & Trial Information</h2>
+    <p>FolioTrax uses Apple's StoreKit framework to manage subscriptions. When you subscribe or use the 7-day free trial:</p>
+    <ul>
+      <li>Subscription purchases are processed entirely by Apple through the App Store</li>
+      <li>We receive only anonymized purchase confirmation signals via Apple's StoreKit — not your payment details</li>
+      <li>We do not receive, store, or process your Apple ID, credit card information, or billing address</li>
+      <li>Your subscription status (free trial, Pro, or basic) is verified locally through Apple's frameworks</li>
+    </ul>
+    <div class="highlight-box">
+      <p><strong>Free vs Pro:</strong> On the free plan (after trial), automatic price updates are disabled — you enter prices manually. Your data is never deleted when your trial ends or when you cancel Pro. Accounts and assets beyond the free limits become locked (viewable and deletable, but not editable) until you resubscribe.</p>
+    </div>
+
+    <h2>3. Data You Enter</h2>
+    <p>All financial data you enter into FolioTrax — including portfolio names, transaction history, cash balances, custom assets, and journal entries — is stored locally on your device. We cannot access, view, or retrieve this data. You are solely responsible for the accuracy and security of the data you enter.</p>
+
+    <h2>4. iCloud Synchronization</h2>
+    <p>If you enable iCloud backup on your device, FolioTrax data may be stored in Apple's iCloud service as part of your device backup. This data is governed by Apple's Privacy Policy. We do not have access to your iCloud data.</p>
+
+    <h2>5. Family Share Feature</h2>
+    <p>FolioTrax includes a Family Share feature that allows you to share a read-only view of your portfolio with family members. When you use this feature:</p>
+    <ul>
+      <li>Portfolio data is transmitted directly between devices using FolioTrax's sharing mechanism (via iCloud or share files)</li>
+      <li>Shared data is limited to the portfolio information you explicitly choose to share</li>
+      <li>We do not store or process shared portfolio data on our servers</li>
+      <li>Recipients can view but cannot modify your portfolio data</li>
+    </ul>
+
+    <h2>6. Automatic Price Updates (Pro Feature)</h2>
+    <p>With a Pro subscription or during the 7-day trial, FolioTrax automatically fetches price data for your assets at regular intervals. This involves:</p>
+    <ul>
+      <li>Your device making requests to third-party financial data providers to retrieve current market prices</li>
+      <li>These requests include asset ticker symbols but do not include your personal information or portfolio quantities</li>
+      <li>Price data displayed may be delayed and does not represent instantaneous market values</li>
+      <li>On the free plan (after trial expiry), no automatic price fetching occurs</li>
+    </ul>
+    <p>We do not identify data providers by name in this policy, as partnerships and data sources may change over time.</p>
+
+    <h2>7. Support Communications</h2>
+    <p>If you contact us through the in-app Support form (Settings → Help & Support → Support), you provide us with:</p>
+    <ul>
+      <li>Your name and email address</li>
+      <li>The content of your support message</li>
+    </ul>
+    <p>We use this information solely to respond to your inquiry. We do not use support communications for marketing purposes without your explicit consent. Communications are sent to info@cempm.com.</p>
+
+    <h2>8. Data We Do Not Collect</h2>
+    <p>FolioTrax does not collect:</p>
+    <ul>
+      <li>Location data</li>
+      <li>Device identifiers for advertising purposes (IDFA)</li>
+      <li>Browsing history or activity across other apps</li>
+      <li>Contact lists or address book data</li>
+      <li>Camera or microphone data</li>
+      <li>Biometric data (Face ID/Touch ID is managed entirely by iOS)</li>
+    </ul>
+
+    <h2>9. Third-Party SDKs and Frameworks</h2>
+    <p>FolioTrax integrates with Apple's native frameworks only:</p>
+    <ul>
+      <li><strong>StoreKit</strong> — subscription and purchase management</li>
+      <li><strong>CloudKit / iCloud</strong> — optional device backup and Family Share sync</li>
+      <li><strong>UserNotifications</strong> — price alerts and daily summaries</li>
+    </ul>
+    <p>We do not integrate third-party advertising SDKs, analytics SDKs, or social media tracking pixels.</p>
+
+    <h2>10. Data Security</h2>
+    <p>Your data is stored locally on your device and protected by your device's built-in security mechanisms, including device passcode and biometric authentication (Face ID / Touch ID). We recommend enabling device-level encryption and using a strong passcode.</p>
+    <p>We cannot be held responsible for data breaches resulting from unauthorized access to your device or your iCloud account.</p>
+
+    <h2>11. Data Retention & Deletion</h2>
+    <p>Your data persists on your device until you delete the application or manually clear data through Settings → Clear All Data within FolioTrax.</p>
+    <ul>
+      <li>Cancelling a Pro subscription does <strong>not</strong> delete your data</li>
+      <li>Letting the 7-day trial expire does <strong>not</strong> delete your data</li>
+      <li>You can delete all data at any time through Settings → Clear All Data (this action is permanent and irreversible)</li>
+      <li>Uninstalling the app removes local data from your device</li>
+    </ul>
+
+    <h2>12. Children's Privacy</h2>
+    <p>FolioTrax is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from minors. If you believe a minor has provided personal information through our app, please contact us at info@cempm.com.</p>
+
+    <h2>13. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. We will notify you of material changes through the application. Your continued use of FolioTrax after changes become effective constitutes your acceptance of the updated Policy.</p>
+
+    <div class="contact-box">
+      <h3>Questions about this Privacy Policy?</h3>
+      <p>Contact us directly — we respond to all privacy-related inquiries.</p>
+      <a class="contact-link" href="mailto:info@cempm.com">info@cempm.com</a>
+      <br><br>
+      <p style="font-size:13px;">Cem Print and Marketing LLC &nbsp;·&nbsp; cempm.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- TURKISH CONTENT -->
+<div data-tr>
+  <div class="page-header">
+    <p class="page-eyebrow">Yasal</p>
+    <h1 class="page-title">FolioTrax Gizlilik Politikası</h1>
+    <p class="page-meta">Cem Print and Marketing LLC &nbsp;·&nbsp; Son güncelleme: Haziran 2026</p>
+  </div>
+
+  <div class="content">
+    <div class="intro-box">
+      <strong>FolioTrax</strong>, <strong>Cem Print and Marketing LLC</strong> tarafından geliştirilen ve yayımlanan iOS için kişisel bir portföy takip uygulamasıdır. Bu Gizlilik Politikası, FolioTrax'i kullandığınızda bilgilerinizi nasıl ele aldığımızı açıklar. FolioTrax, tam Pro erişimli <strong>7 günlük ücretsiz deneme</strong>, ardından ücretsiz plan (manuel fiyat girişi) veya otomatik fiyat güncellemeleri ve premium özelliklerle <strong>Pro aboneliği</strong> (aylık 3,99 $ veya yıllık 29,99 $) sunar.
+    </div>
+
+    <h2>1. Topladığımız Bilgiler</h2>
+    <p>FolioTrax, <strong>yerel öncelikli bir yaklaşımla</strong> tasarlanmıştır. Verilerinizin büyük çoğunluğu hiçbir zaman cihazınızı terk etmez.</p>
+    <p>Cihazınızda yerel olarak saklanan bilgiler:</p>
+    <ul>
+      <li>Girdiğiniz portföy verileri: işlemler, varlık adları, miktarlar, fiyatlar, nakit bakiyeleri</li>
+      <li>Hesap bilgileri: broker hesapları, banka hesapları, tasarruflar, krediler, abonelik takipçileri</li>
+      <li>Uygulama ayarları: dil tercihi, para birimi, tema, bildirim ayarları</li>
+      <li>Uygulama içinde oluşturduğunuz günlük girişleri ve notlar</li>
+      <li>Fiyat uyarısı yapılandırmaları ve izleme listesi öğeleri</li>
+    </ul>
+    <p>Bu verileri sunucularımıza <strong>iletmiyor veya toplamıyoruz</strong>. Finansal verileriniz cihazınızda kalır.</p>
+
+    <h2>2. Abonelik ve Deneme Bilgileri</h2>
+    <p>FolioTrax, abonelikleri yönetmek için Apple'ın StoreKit çerçevesini kullanır. Abone olduğunuzda veya 7 günlük ücretsiz denemeyi kullandığınızda:</p>
+    <ul>
+      <li>Abonelik satın alımları tamamen Apple tarafından App Store üzerinden işlenir</li>
+      <li>Apple'ın StoreKit'i aracılığıyla yalnızca anonimleştirilmiş satın alma onay sinyalleri alırız — ödeme bilgilerinizi almayız</li>
+      <li>Apple ID'nizi, kredi kartı bilgilerinizi veya faturalama adresinizi almaz, saklamaz veya işlemeyiz</li>
+      <li>Abonelik durumunuz (ücretsiz deneme, Pro veya temel) Apple'ın çerçeveleri aracılığıyla yerel olarak doğrulanır</li>
+    </ul>
+    <div class="highlight-box">
+      <p><strong>Ücretsiz - Pro Farkı:</strong> Ücretsiz planda (deneme sonrası) otomatik fiyat güncellemeleri devre dışı kalır — fiyatları manuel olarak girersiniz. Denemeniz sona erdiğinde veya Pro'yu iptal ettiğinizde verileriniz asla silinmez. Ücretsiz limitleri aşan hesap ve varlıklar yeniden abone olana kadar kilitlenir (görüntülenebilir ve silinebilir, ancak düzenlenemez).</p>
+    </div>
+
+    <h2>3. Girdiğiniz Veriler</h2>
+    <p>FolioTrax'e girdiğiniz tüm finansal veriler — portföy adları, işlem geçmişi, nakit bakiyeleri, özel varlıklar ve günlük girişleri dahil — cihazınızda yerel olarak saklanır. Bu verilere erişemez, göremez veya alamayız. Girdiğiniz verilerin doğruluğundan ve güvenliğinden yalnızca siz sorumlusunuz.</p>
+
+    <h2>4. iCloud Senkronizasyonu</h2>
+    <p>Cihazınızda iCloud yedeklemesini etkinleştirirseniz, FolioTrax verileri cihaz yedeğinizin bir parçası olarak Apple'ın iCloud hizmetinde saklanabilir. Bu veriler Apple'ın Gizlilik Politikası kapsamındadır. iCloud verilerinize erişimimiz yoktur.</p>
+
+    <h2>5. Aile Paylaşımı Özelliği</h2>
+    <p>FolioTrax, portföyünüzün salt okunur görünümünü aile üyeleriyle paylaşmanıza olanak tanıyan bir Aile Paylaşımı özelliği içerir:</p>
+    <ul>
+      <li>Portföy verileri, FolioTrax'in paylaşım mekanizması aracılığıyla doğrudan cihazlar arasında iletilir</li>
+      <li>Paylaşılan veriler, paylaşmayı açıkça seçtiğiniz portföy bilgileriyle sınırlıdır</li>
+      <li>Paylaşılan portföy verilerini sunucularımızda saklamaz veya işlemeyiz</li>
+      <li>Alıcılar portföy verilerinizi görüntüleyebilir ancak değiştiremez</li>
+    </ul>
+
+    <h2>6. Otomatik Fiyat Güncellemeleri (Pro Özelliği)</h2>
+    <p>Pro aboneliği veya 7 günlük deneme süresince FolioTrax, varlıklarınız için fiyat verilerini düzenli aralıklarla otomatik olarak alır:</p>
+    <ul>
+      <li>Cihazınız, güncel piyasa fiyatlarını almak için üçüncü taraf finansal veri sağlayıcılarına istekte bulunur</li>
+      <li>Bu istekler varlık hisse senedi sembollerini içerir, ancak kişisel bilgilerinizi veya portföy miktarlarınızı içermez</li>
+      <li>Görüntülenen fiyat verileri gecikmeli olabilir ve anlık piyasa değerlerini yansıtmaz</li>
+      <li>Ücretsiz planda (deneme süresi dolunca) otomatik fiyat alımı gerçekleşmez</li>
+    </ul>
+
+    <h2>7. Destek İletişimleri</h2>
+    <p>Uygulama içi Destek formu (Ayarlar → Yardım ve Destek → Destek) aracılığıyla bizimle iletişime geçerseniz şunları sağlamış olursunuz:</p>
+    <ul>
+      <li>Adınız ve e-posta adresiniz</li>
+      <li>Destek mesajınızın içeriği</li>
+    </ul>
+    <p>Bu bilgileri yalnızca sorunuza yanıt vermek için kullanırız. Açık rızanız olmadan destek iletişimlerini pazarlama amacıyla kullanmayız.</p>
+
+    <h2>8. Toplamadığımız Veriler</h2>
+    <p>FolioTrax şunları toplamaz:</p>
+    <ul>
+      <li>Konum verileri</li>
+      <li>Reklam amaçlı cihaz tanımlayıcıları (IDFA)</li>
+      <li>Tarama geçmişi veya diğer uygulamalardaki aktivite</li>
+      <li>Kişi listeleri veya adres defteri verileri</li>
+      <li>Kamera veya mikrofon verileri</li>
+      <li>Biyometrik veriler (Face ID/Touch ID tamamen iOS tarafından yönetilir)</li>
+    </ul>
+
+    <h2>9. Üçüncü Taraf SDK'ları ve Çerçeveler</h2>
+    <p>FolioTrax yalnızca Apple'ın yerel çerçeveleriyle entegre olur:</p>
+    <ul>
+      <li><strong>StoreKit</strong> — abonelik ve satın alma yönetimi</li>
+      <li><strong>CloudKit / iCloud</strong> — isteğe bağlı cihaz yedeklemesi ve Aile Paylaşımı senkronizasyonu</li>
+      <li><strong>UserNotifications</strong> — fiyat uyarıları ve günlük özetler</li>
+    </ul>
+    <p>Üçüncü taraf reklam SDK'ları, analitik SDK'ları veya sosyal medya izleme piksellerini entegre etmiyoruz.</p>
+
+    <h2>10. Veri Güvenliği</h2>
+    <p>Verileriniz cihazınızda yerel olarak saklanır ve cihazınızın yerleşik güvenlik mekanizmalarıyla korunur. Cihaz düzeyinde şifrelemeyi etkinleştirmenizi ve güçlü bir parola kullanmanızı öneririz.</p>
+
+    <h2>11. Veri Saklama ve Silme</h2>
+    <p>Verileriniz, uygulamayı silene veya FolioTrax içinden Ayarlar → Tüm Veriyi Sil yoluyla verileri manuel olarak temizleyene kadar cihazınızda kalır.</p>
+    <ul>
+      <li>Pro aboneliğini iptal etmek verilerinizi <strong>silmez</strong></li>
+      <li>7 günlük deneme süresinin dolması verilerinizi <strong>silmez</strong></li>
+      <li>Ayarlar → Tüm Veriyi Sil aracılığıyla istediğiniz zaman tüm verileri silebilirsiniz (bu işlem kalıcı ve geri alınamaz)</li>
+      <li>Uygulamayı kaldırmak yerel verileri cihazınızdan kaldırır</li>
+    </ul>
+
+    <h2>12. Çocukların Gizliliği</h2>
+    <p>FolioTrax, 18 yaş altı bireyler tarafından kullanılmak üzere tasarlanmamıştır. Küçüklerden bilerek kişisel bilgi toplamıyoruz. Bir küçüğün uygulamamız aracılığıyla kişisel bilgi sağladığını düşünüyorsanız lütfen info@cempm.com adresinden bizimle iletişime geçin.</p>
+
+    <h2>13. Bu Politikadaki Değişiklikler</h2>
+    <p>Bu Gizlilik Politikasını uygulamalarımızdaki değişiklikleri veya yasal, operasyonel ya da düzenleyici nedenleri yansıtmak için zaman zaman güncelleyebiliriz. Önemli değişiklikleri uygulama aracılığıyla bildireceğiz. Değişiklikler yürürlüğe girdikten sonra FolioTrax'i kullanmaya devam etmeniz, güncellenmiş Politikayı kabul ettiğiniz anlamına gelir.</p>
+
+    <div class="contact-box">
+      <h3>Bu Gizlilik Politikası hakkında sorularınız mı var?</h3>
+      <p>Doğrudan bizimle iletişime geçin — gizlilikle ilgili tüm sorgulamalara yanıt veriyoruz.</p>
+      <a class="contact-link" href="mailto:info@cempm.com">info@cempm.com</a>
+      <br><br>
+      <p style="font-size:13px;">Cem Print and Marketing LLC &nbsp;·&nbsp; cempm.com</p>
+    </div>
+  </div>
+</div>
 
 <footer>
-  <div class="container-wide">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <img src="cem-logo.png" alt="">
-          <span class="footer-brand-text">Cem Print &amp; Marketing</span>
-        </div>
-        <div class="footer-addr">8300 W Flagler St, Suite 155<br>Miami, FL 33144 · (305) 223-5981</div>
-      </div>
-      <nav class="footer-links">
-        <a href="/#services">Services</a>
-        <a href="/#about">About</a>
-        <a href="/#contact">Contact</a>
-        <a href="/privacy.html">Privacy</a>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Cem Print and Marketing LLC. All rights reserved.</span>
-      <span>Miami, Florida</span>
-    </div>
-  </div>
+  <p data-en>© 2026 Cem Print and Marketing LLC · <a href="/">Home</a> · <a href="mailto:info@cempm.com">Contact</a></p>
+  <p data-tr>© 2026 Cem Print and Marketing LLC · <a href="/">Ana Sayfa</a> · <a href="mailto:info@cempm.com">İletişim</a></p>
 </footer>
 
+<script>
+  function setLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    });
+    localStorage.setItem('cempm-lang', lang);
+    document.documentElement.lang = lang;
+  }
+  const saved = localStorage.getItem('cempm-lang');
+  if (saved === 'tr') setLang('tr');
+</script>
 </body>
 </html>
