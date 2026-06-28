@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal | Cem Print and Marketing LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#080D1A;--bg2:#0D1526;--bg3:#111D33;--cyan:#00C8D4;--teal:#1DE9B6;--white:#F0F6FF;--muted:#7A8FAF;--border:rgba(0,200,212,0.15)}
+    body{background:var(--bg);color:var(--white);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+    nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:64px;background:rgba(8,13,26,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-size:15px;font-weight:700;color:var(--white);text-decoration:none}.nav-logo span{color:var(--cyan)}
+    .nav-back{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--muted);text-decoration:none;transition:color .2s}.nav-back:hover{color:var(--cyan)}
+    .nav-right{display:flex;align-items:center;gap:16px}
+    .lang-toggle{display:flex;gap:2px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:3px}
+    .lang-btn{padding:4px 12px;border:none;background:transparent;color:var(--muted);font-size:13px;font-weight:600;border-radius:6px;cursor:pointer;transition:all .2s;font-family:inherit}
+    .lang-btn.active{background:var(--cyan);color:#080D1A}
+    .page-header{padding:80px 40px 60px;max-width:720px;margin:0 auto;border-bottom:1px solid var(--border)}
+    .page-eyebrow{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);margin-bottom:16px}
+    .page-title{font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px}
+    .page-sub{font-size:16px;color:var(--muted);line-height:1.7}
+    .content{max-width:720px;margin:0 auto;padding:60px 40px 100px}
+    .legal-list{display:flex;flex-direction:column;gap:16px;margin-top:8px}
+    .legal-card{display:flex;align-items:center;gap:20px;padding:28px 32px;background:var(--bg2);border:1px solid var(--border);border-radius:16px;text-decoration:none;color:var(--white);transition:all .25s;position:relative;overflow:hidden}
+    .legal-card::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,200,212,0.05),transparent);opacity:0;transition:opacity .25s}
+    .legal-card:hover{border-color:rgba(0,200,212,0.4);transform:translateX(6px);box-shadow:0 8px 32px rgba(0,200,212,0.08)}
+    .legal-card:hover::after{opacity:1}
+    .card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px}
+    .icon-warning{background:rgba(255,171,0,0.1);border:1px solid rgba(255,171,0,0.2)}
+    .icon-terms{background:rgba(0,200,212,0.08);border:1px solid var(--border)}
+    .icon-privacy{background:rgba(29,233,182,0.08);border:1px solid rgba(29,233,182,0.2)}
+    .icon-cookie{background:rgba(147,112,219,0.08);border:1px solid rgba(147,112,219,0.2)}
+    .card-text{flex:1}
+    .card-title{font-size:17px;font-weight:700;margin-bottom:4px}
+    .card-desc{font-size:14px;color:var(--muted);line-height:1.5}
+    .card-arrow{color:var(--muted);flex-shrink:0;transition:transform .2s}
+    .legal-card:hover .card-arrow{transform:translateX(4px);color:var(--cyan)}
+    footer{border-top:1px solid var(--border);padding:32px 40px;text-align:center;font-size:13px;color:var(--muted)}
+    footer a{color:var(--muted);text-decoration:none}.footer a:hover{color:var(--cyan)}
+    @media(max-width:768px){nav{padding:0 20px}.page-header{padding:60px 20px 40px}.content{padding:40px 20px 80px}.legal-card{padding:20px 20px}.card-desc{display:none}}
+    .lang-en [data-tr]{display:none}.lang-tr [data-en]{display:none}
+  </style>
+</head>
+<body class="lang-en">
+<nav>
+  <a class="nav-logo" href="/"><span>Cem</span> Print and Marketing</a>
+  <div class="nav-right">
+    <a class="nav-back" href="/">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      <span data-en>Home</span><span data-tr>Ana Sayfa</span>
+    </a>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('tr')">TR</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <p class="page-eyebrow" data-en>Legal</p>
+  <p class="page-eyebrow" data-tr>Yasal</p>
+  <h1 class="page-title" data-en>Legal Documents</h1>
+  <h1 class="page-title" data-tr>Yasal Belgeler</h1>
+  <p class="page-sub" data-en>Important information about your rights, our terms, and how we protect your data when using FolioTrax and our services.</p>
+  <p class="page-sub" data-tr>FolioTrax ve hizmetlerimizi kullanırken haklarınız, koşullarımız ve verilerinizi nasıl koruduğumuz hakkında önemli bilgiler.</p>
+</div>
+
+<div class="content">
+  <div class="legal-list">
+
+    <a class="legal-card" href="/risk-warning.html">
+      <div class="card-icon icon-warning">⚠️</div>
+      <div class="card-text">
+        <div class="card-title" data-en>Risk Warning</div>
+        <div class="card-title" data-tr>Risk Uyarısı</div>
+        <div class="card-desc" data-en>Important disclosures about investment risk, delayed pricing data, and financial decision-making.</div>
+        <div class="card-desc" data-tr>Yatırım riski, gecikmeli fiyat verileri ve finansal karar alma hakkında önemli açıklamalar.</div>
+      </div>
+      <svg class="card-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+
+    <a class="legal-card" href="/terms.html">
+      <div class="card-icon icon-terms">📄</div>
+      <div class="card-text">
+        <div class="card-title" data-en>Terms and Conditions</div>
+        <div class="card-title" data-tr>Kullanım Koşulları</div>
+        <div class="card-desc" data-en>The rules and agreements that govern your use of FolioTrax and our services.</div>
+        <div class="card-desc" data-tr>FolioTrax ve hizmetlerimizin kullanımını düzenleyen kural ve sözleşmeler.</div>
+      </div>
+      <svg class="card-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+
+    <a class="legal-card" href="/privacy.html">
+      <div class="card-icon icon-privacy">🔒</div>
+      <div class="card-text">
+        <div class="card-title" data-en>Privacy Policy</div>
+        <div class="card-title" data-tr>Gizlilik Politikası</div>
+        <div class="card-desc" data-en>How we collect, use, and protect your personal data. FolioTrax is local-first — your data stays on your device.</div>
+        <div class="card-desc" data-tr>Kişisel verilerinizi nasıl topladığımız, kullandığımız ve koruduğumuz. FolioTrax yerel önceliklidir — verileriniz cihazınızda kalır.</div>
+      </div>
+      <svg class="card-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+
+    <a class="legal-card" href="/cookie-policy.html">
+      <div class="card-icon icon-cookie">🍪</div>
+      <div class="card-text">
+        <div class="card-title" data-en>Cookie Policy</div>
+        <div class="card-title" data-tr>Çerez Politikası</div>
+        <div class="card-desc" data-en>How we use local storage and tracking technologies in FolioTrax and on this website.</div>
+        <div class="card-desc" data-tr>FolioTrax'te ve bu web sitesinde yerel depolama ve izleme teknolojilerini nasıl kullandığımız.</div>
+      </div>
+      <svg class="card-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <p data-en>© 2026 Cem Print and Marketing LLC · <a href="/">Home</a></p>
+  <p data-tr>© 2026 Cem Print and Marketing LLC · <a href="/">Ana Sayfa</a></p>
+</footer>
+
+<script>
+  function setLang(lang){document.body.className='lang-'+lang;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.textContent.toLowerCase()===lang));localStorage.setItem('cempm-lang',lang);document.documentElement.lang=lang}
+  const saved=localStorage.getItem('cempm-lang');if(saved==='tr')setLang('tr');
+</script>
+</body>
+</html>
